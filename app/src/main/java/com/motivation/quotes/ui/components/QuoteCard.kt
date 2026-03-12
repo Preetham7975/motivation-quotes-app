@@ -61,7 +61,7 @@ fun QuoteCard(
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Quote marks
+                // Opening quotation mark (\u201C = ")
                 Text(
                     text = "\u201C",
                     fontSize = 60.sp,

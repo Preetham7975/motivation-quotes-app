@@ -36,8 +36,8 @@ fun AnimatedBackground(
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit
 ) {
-    val safeIndex = backgroundIndex % backgroundGradients.size
-    val gradient = backgroundGradients[safeIndex]
+    val wrappedIndex = backgroundIndex % backgroundGradients.size
+    val gradient = backgroundGradients[wrappedIndex]
 
     // Floating orb animation
     val infiniteTransition = rememberInfiniteTransition(label = "bg_anim")
